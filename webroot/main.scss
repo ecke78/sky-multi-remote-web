@@ -25,6 +25,10 @@ body {
 
 .remote {
     flex-basis: 50px !important;
+
+    &:active {
+        background-color: #0aa3e7 !important;
+    }
 }
 
 #advanced,

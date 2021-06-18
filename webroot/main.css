@@ -27,6 +27,10 @@ body {
       flex-basis: 50px !important;
 }
 
+.remote:active {
+  background-color: #0aa3e7 !important;
+}
+
 #advanced > div.group,
 #channels > div.group,
 #area > div.group {
