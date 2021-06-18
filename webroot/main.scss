@@ -1,0 +1,125 @@
+body {
+    background-color: #212426;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#channels {
+
+    div[data-channel] {
+        width: 400px;
+        height: 50px;
+    }
+
+}
+
+#area {
+    background-color: #272b2e;
+    box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+    position: sticky;
+    top: 0;
+}
+
+.remote {
+    flex-basis: 50px !important;
+}
+
+#advanced,
+#channels,
+#area {
+
+    >div.group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    >div.group div {
+        margin: 10px;
+        color: #bebebe;
+        text-shadow: 1px 1px 2px #000000;
+        background-color: #494f52;
+        flex-basis: 50%;
+        height: 100px;
+        border-radius: 0.3em;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 4vw;
+        box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+
+        &.selected {
+            background-color: #0aa3e7;
+        }
+    }
+}
+
+#advanced,
+#channels {
+    div.group {
+        flex-wrap: wrap;
+        user-select: none;
+    }
+
+    div.group>div {
+        font-size: 3vw;
+        padding: 1rem;
+        max-width: 35vw;
+
+        span {
+            display: inline-block;
+            padding-right: 0.5em;
+        }
+
+        &:active {
+            background-color: #0aa3e7;
+            user-select: none;
+        }
+    }
+}
+
+
+#advanced {
+    div.group>div {
+        max-width: 50px;
+        height: 50px;
+        font-size: 2em;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 2em;
+
+        span {
+            padding-right: 0;
+        }
+
+        &.oval {
+            border-radius: 20%;
+            max-width: 90px;
+            font-size: 1em;
+        }
+    }
+}
+
+[data-channel="red"] {
+    background-color: #f44336 !important;
+}
+
+[data-channel="yellow"] {
+    background-color: #FFEB3B !important;
+}
+
+[data-channel="green"] {
+    background-color: #4CAF50 !important;
+}
+
+[data-channel="blue"] {
+    background-color: #03A9F4 !important;
+}

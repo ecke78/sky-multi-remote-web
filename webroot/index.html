@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ecke's SkyRemote</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=0.6, user-scalable=0, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="sky-remote2.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <section id="area">
+        <div class="group">
+            <div class="games selected" data-box="games">Games Area</div>
+            <div class="main" data-box="main">Main Pub</div>
+            <div class="remote"><img src="skyplus_sm.png" width="40"></div>
+        </div>
+    </section>
+    <section id="channels">
+        <div class="group">
+            <div data-channel="channelup"><span><i class="fa fa-arrow-up"></i></span>CHANNEL UP</div>
+            <div data-channel="channeldown"><span><i class="fa fa-arrow-down"></i></span>CHANNEL DOWN</div>
+            <div data-channel="101"><span>101</span>BBC1</div>
+            <div data-channel="102"><span>102</span>BBC2</div>
+            <div data-channel="103"><span>103</span>ITV</div>
+            <div data-channel="104"><span>104</span>Channel 4</div>
+            <div data-channel="401"><span>401</span>Sky Sports Main Event</div>
+            <div data-channel="402"><span>402</span>Sky Sports PL</div>
+            <div data-channel="403"><span>403</span>Sky Sports Football</div>
+            <div data-channel="404"><span>404</span>Sky Sports Cricket</div>
+            <div data-channel="405"><span>405</span>Sky Sports Golf</div>
+            <div data-channel="406"><span>406</span>Sky Sports F1</div>
+            <div data-channel="407"><span>407</span>Sky Sports Action</div>
+            <div data-channel="409"><span>409</span>Sky Sports Action</div>
+        </div>
+    </section>
+    <section id="advanced" style="display:none">
+        <div class="group">
+            <div data-channel="channelup"><span><i class="fa fa-arrow-up"></i></span><span
+                    style="font-size:0.5em;padding-left:0.4em;padding-top:0.4em">CH</span></div>
+            <div data-channel="channeldown"><span><i class="fa fa-arrow-down"></i></span><span
+                    style="font-size:0.5em;padding-left:0.4em;padding-top:0.4em">CH</span></div>
+        </div>
+
+        <div class="group">
+            <div data-channel="up"><span><i class="fas fa-chevron-up"></i></span></div>
+        </div>
+        <div class="group">
+            <div data-channel="left"><span><i class="fas fa-chevron-left"></i></span></div>
+            <div data-channel="select"><span><span style="font-size:0.5em;">SELECT</span></div>
+            <div data-channel="right"><span><i class="fas fa-chevron-right"></i></span></div>
+        </div>
+        <div class="group">
+            <div data-channel="down"><span><i class="fas fa-chevron-down"></i></span></div>
+        </div>
+        <div class="group">
+            <div class="oval" data-channel="backup">Backup</div>
+        </div>
+        <div class="group">
+            <div data-channel="0"><span>0</span></div>
+            <div data-channel="1"><span>1</span></div>
+            <div data-channel="2"><span>2</span></div>
+            <div data-channel="3"><span>3</span></div>
+            <div data-channel="4"><span>4</span></div>
+            <div data-channel="5"><span>5</span></div>
+            <div data-channel="6"><span>6</span></div>
+            <div data-channel="7"><span>7</span></div>
+            <div data-channel="8"><span>8</span></div>
+            <div data-channel="9"><span>9</span></div>
+        </div>
+        <div class="group">
+            <div data-channel="red"><span></span></div>
+            <div data-channel="green"><span></span></div>
+            <div data-channel="yellow"><span></span></div>
+            <div data-channel="blue"><span></span></div>
+        </div>
+        <div class="group">
+            <div class="oval" data-channel="sky"><span>Sky</span></div>
+            <div class="oval" data-channel="tvguide"><span>TV Guide</span></div>
+            <div class="oval" data-channel="services"><span>Services</span></div>
+            <div class="oval" data-channel="interactive"><span>Interactive</span></div>
+        </div>
+        <div class="group">
+            <div class="oval" data-channel="text"><span>Text</span></div>
+            <div class="oval" data-channel="help"><span>Help</span></div>
+            <div class="oval" data-channel="i"><span>Info</span></div>
+            <div class="oval" data-channel="power"><span>Power</span></div>
+        </div>
+    </section>
+</body>

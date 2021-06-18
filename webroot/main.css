@@ -1,0 +1,149 @@
+body {
+  background-color: #212426;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#channels div[data-channel] {
+  width: 400px;
+  height: 50px;
+}
+
+#area {
+  background-color: #272b2e;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+          box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.remote {
+  -ms-flex-preferred-size: 50px !important;
+      flex-basis: 50px !important;
+}
+
+#advanced > div.group,
+#channels > div.group,
+#area > div.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#advanced > div.group div,
+#channels > div.group div,
+#area > div.group div {
+  margin: 10px;
+  color: #bebebe;
+  text-shadow: 1px 1px 2px #000000;
+  background-color: #494f52;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 100px;
+  border-radius: 0.3em;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-size: 4vw;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+          box-shadow: 0px 3px 5px 0px rgba(22, 22, 22, 0.75);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#advanced > div.group div.selected,
+#channels > div.group div.selected,
+#area > div.group div.selected {
+  background-color: #0aa3e7;
+}
+
+#advanced div.group,
+#channels div.group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#advanced div.group > div,
+#channels div.group > div {
+  font-size: 3vw;
+  padding: 1rem;
+  max-width: 35vw;
+}
+
+#advanced div.group > div span,
+#channels div.group > div span {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+#advanced div.group > div:active,
+#channels div.group > div:active {
+  background-color: #0aa3e7;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#advanced div.group > div {
+  max-width: 50px;
+  height: 50px;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+}
+
+#advanced div.group > div span {
+  padding-right: 0;
+}
+
+#advanced div.group > div.oval {
+  border-radius: 20%;
+  max-width: 90px;
+  font-size: 1em;
+}
+
+[data-channel="red"] {
+  background-color: #f44336 !important;
+}
+
+[data-channel="yellow"] {
+  background-color: #FFEB3B !important;
+}
+
+[data-channel="green"] {
+  background-color: #4CAF50 !important;
+}
+
+[data-channel="blue"] {
+  background-color: #03A9F4 !important;
+}
+/*# sourceMappingURL=main.css.map */
