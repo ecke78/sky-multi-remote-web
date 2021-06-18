@@ -1,6 +1,6 @@
 {
   "name": "sky-multi-remote-web",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Web interface for sending remote control commands to multiple Sky TV boxes",
   "main": "app.js",
   "scripts": {
