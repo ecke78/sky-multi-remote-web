@@ -9,19 +9,19 @@ const skyboxes = {
 
 const app = express();
 app.use(express.static('webroot'));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/control', function(req, res) {
+app.post('/control', function (req, res) {
 	const remoteControl = new SkyRemote(skyboxes[req.body.box]);
 	let command = req.body.command;
-	if (!isNaN(command)) command = [...command];
+	if (!isNaN(+command)) command = [...command];
 
-	console.log(req.body.box,":", command);
-	remoteControl.press(req.body.command,()=> {
+	console.log(req.body.box, ":", command);
+	remoteControl.press(command, () => {
 		res.end('OK');
 	});
 });
 
-app.listen(83, function() {
-	console.log("http://127.0.0.1:83");
+app.listen(80, function () {
+	console.log("http://127.0.0.1:80");
 });

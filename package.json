@@ -1,6 +1,6 @@
 {
   "name": "sky-multi-remote-web",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Web interface for sending remote control commands to multiple Sky TV boxes",
   "main": "app.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "Remote"
   ],
   "author": "Chris Exon",
-  "license": "Apapche 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ecke78/sky-multi-remote-web/issues"
   },
